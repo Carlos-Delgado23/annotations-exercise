@@ -4,8 +4,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Author extends Person {
-    private List<String> books;
+
+    private List books;
+
 
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
@@ -20,9 +23,9 @@ public class Author extends Person {
         return books;
     }
 
-    public List<String> publishedBooks() {
-        return books;
-    }
+    public List<String> publishedBooks() { return books; }
+
+
 
     public void addBook(String book) {
         books.add(book);
